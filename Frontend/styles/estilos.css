@@ -1,0 +1,205 @@
+body {
+    background-image: linear-gradient(#a18bbd40, #2c2e4bc8), url('/Imagenes/Web_ISH_18.8777-96.png');
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos para el logo */
+nav .logo {
+    height: 15x; /* Ajusta según el tamaño que prefieras */
+    margin-right: 10px; /* Separación del resto de elementos */
+    object-fit: contain;
+}
+/* NAV */
+nav {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgba(175, 131, 216, 0.2);
+    margin-bottom: 1%;
+}
+
+nav img {
+    height: 60px;
+}
+
+nav button {
+    background-color: rgb(175, 131, 216);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 7px 7px 5px #160ca355;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+nav button:hover {
+    background-color: rgb(162, 105, 215);
+}
+
+.buttonC {
+    background-color: rgb(171, 88, 164);
+    font-style: italic;
+    font-size: 13px;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.buttonC:hover {
+    background-color: rgb(125, 60, 128);
+}
+
+/* SECTIONS */
+section {
+    background-color: #a4a0ded1;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #160ca355;
+    border-radius: 5px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 768px) {
+    section {
+        margin-top: 5%;
+        width: 70%;
+    }
+    p {
+        font-size: 1.5em;
+    }
+}
+
+/* BUTTONS */
+.buttone, .buttoncu {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(171, 88, 164);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 7px 7px 5px #160ca355;
+    font-style: italic;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.buttone:hover, .buttoncu:hover {
+    background-color: rgb(125, 60, 128);
+}
+
+/* INPUT FIELDS */
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FORM SECTIONS */
+.Formulario1 {
+    background-color: rgba(175, 131, 216, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #160ca355;
+}
+
+/* WARNING SECTION */
+section p {
+    color: #3b1249;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.container, .containere, .containerp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+}
+
+.botones_empresa, .botones_proveedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.botones_empresa input, .botones_proveedor input {
+    background-color: rgb(171, 88, 164);
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 7px 7px 5px #160ca355;
+}
+
+.botones_empresa input:hover, .botones_proveedor input:hover {
+    background-color: rgb(125, 60, 128);
+}
+
+/* FINAL BUTTONS */
+.final {
+    background-color: rgb(125, 60, 128);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px #160ca355;
+    cursor: pointer;
+}
+
+.final:hover {
+    background-color: rgb(100, 50, 100);
+}
+
+/* IMAGES */
+.imagen {
+    height: 60px;
+}
+
+/* FORM FIELD RESPONSIVENESS */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

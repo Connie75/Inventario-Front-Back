@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Fotocopiadoras del Huila</title>
+    <link rel="stylesheet" href="/Frontend/dist/output.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="bg-pink-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-pink-200 p-4 flex justify-between items-center">
+        <div>
+            <img src="/Frontend/assets/Logo24.png" alt="Logo de mi empresa" class="h-12 w-auto">
+        </div>
+        <ul class="flex space-x-4">
+            <li><a href="#inventario" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Inventario</a></li>
+            <li><a href="#mision" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Misión</a></li>
+            <li><a href="#servicios" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Servicios</a></li>
+            <li><a href="#contacto" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Contacto</a></li>
+            <li><a href="#continuar" class="bg-vine text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Continuar</a></li>
+            <li><a href="#login" class="bg-vine text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Login</a></li>
+        </ul>
+
+        <!-- Menú desplegable -->
+        <div class="relative group">
+            <a href="#" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">
+                Más Contenidos
+            </a>
+            <ul class="absolute hidden group-hover:block bg-white border border-purple-600 mt-2 w-48">
+                <li><a href="inventario.html" class="block px-4 py-2 hover:bg-pink-100">Inventario</a></li>
+                <li><a href="createUserEmployee.html" class="block px-4 py-2 hover:bg-pink-100">Crear Usuario (Empleado)</a></li>
+                <li><a href="createUserProvider.html" class="block px-4 py-2 hover:bg-pink-100">Crear Usuario (Proveedor)</a></li>
+                <li><a href="advertencia.html" class="block px-4 py-2 hover:bg-pink-100">Advertencia</a></li>
+                <li><a href="menu.html" class="block px-4 py-2 hover:bg-pink-100">Menú Principal</a></li>
+                <li><a href="presentacion.html" class="block px-4 py-2 hover:bg-pink-100">Presentación</a></li>
+                <li><a href="bienvenida.html" class="block px-4 py-2 hover:bg-pink-100">Bienvenida</a></li>
+                <li><a href="despedida.html" class="block px-4 py-2 hover:bg-pink-100">Despedida</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Inicio Section -->
+    <section id="inicio" class="py-16 bg-lilac-100 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-purple-700">Bienvenido</h1>
+            <p class="mt-4 text-gray-600">Estoy agradecida por elegir mi programa de inventario. Estoy emocionada de ayudarte a administrar tu inventario y asegurarme de que tengas todo lo que necesitas para tener éxito. Si tienes alguna pregunta, no dudes en ponerte en contacto conmigo.</p>
+        </div>
+    </section>
+    <!-- Informational Section -->
+    <section class="py-16 bg-ligth bg-pink-100 text-center">
+        <div class="container mx-auto">
+            <p class="text-gray-600">El presente software de gestión de inventario le permite realizar un seguimiento de sus productos en tiempo real, lo que le permite tomar decisiones informadas sobre los alquileres, compra y ventas. Además, puede automatizar muchas tareas tediosas relacionadas con la gestión del inventario, lo que le permite centrarse en otras áreas importantes de su negocio.</p>
+        </div>
+    </section>
+    <!-- Misión Section -->
+    <section id="mision" class="py-16 bg-purple-700 text-gray text-center">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold">Misión</h1>
+            <p class="mt-4">Es de vital importancia para mí ser la solución para mis clientes. El principio ético y empático que utilizo con cada uno de ellos es mi punto de fuerza, pudiendo llegar a entender la mejor opción para su empresa de manera efectiva y segura. Soy sólidamente responsable, valorando las necesidades de los mismos. Garantizo la efectividad y fácil interacción en el manejo de su inventario. Permito un horario constante diario desde las 6 a.m. hasta las 10 p.m. En momentos de extrema necesidad, por favor comuníquese al celular. El titular se compromete a tratar los datos personales recopilados a través del sitio web con la debida confidencialidad y a no comunicar ni ceder dicha información a terceros sin el consentimiento previo del usuario.</p>
+        </div>
+    </section>
+    <!-- Login Section -->
+    <section id="login" class="py-16 bg-lilac-100 text-center">
+        <div class="container mx-auto">
+            <div class="max-w-md mx-auto bg-white p-8 shadow-lg">
+                <h2 class="text-2xl font-bold text-purple-700">Login</h2>
+                <form action="/login" method="post" class="mt-4">
+                    <div>
+                        <label for="username" class="block text-left text-gray-700">Nombre de usuario:</label>
+                        
+                        <input type="text" id="username" name="username" autocomplete="username" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+                    </div>
+                    <div class="mt-4">
+                        <label for="password" class="block text-left text-gray-700">Contraseña:</label>
+                        <input type="password" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" required autocomplete="current-password">
+                    </div>
+                    <input type="submit" value="Iniciar sesión" class="mt-6 bg-purple-700 text-white px-4 py-2 rounded-md cursor-pointer">
+                    <div class="text-center">
+                        <input type="submit" value="Enviar" class="bg-pink-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-pink-500">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Registro Section -->
+    <section id="registro" class="py-16 bg-lilac-100 text-center">
+        <div class="container mx-auto">
+            <div class="max-w-md mx-auto bg-white p-8 shadow-lg">
+                <h2 class="text-2xl font-bold text-purple-700">Registro</h2>
+                <form action="/submit_form" method="post" class="mt-4">
+                    <div>
+                        <label for="registro_fname" class="block text-left text-gray-700">Usuario:</label>
+                        <input type="text" id="registro_fname" name="fname" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" required autocomplete="given-name">
+                    </div>
+                    <div class="mt-4">
+                        <label for="registro_password" class="block text-left text-gray-700">Contraseña:</label>
+        <input type="password" id="registro_password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" required autocomplete="new-password">
+                    </div>
+                    <input type="submit" value="Iniciar sesión" class="mt-6 bg-purple-700 text-white px-4 py-2 rounded-md cursor-pointer">
+                    <div class="text-center">
+                        <input type="submit" value="Enviar" class="bg-pink-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-pink-500">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<section id="trabajador" class="py-10">
+    <div class="container mx-auto p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold text-center mb-4">Creación de Usuarios - Trabajador</h2>
+        <form action="/submit_form" method="post" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="trabajador_fname" class="block text-sm font-medium text-gray-700">Nombres:</label>
+                    <input type="text" id="trabajador_fname" name="fname" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" autocomplete="given-name">
+                    
+                    <label for="trabajador_lname" class="block text-sm font-medium text-gray-700">Apellidos:</label>
+                    <input type="text" id="trabajador_lname" name="lname" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" autocomplete="family-name">                    
+      </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="trabajador_cedula" class="block text-sm font-medium text-gray-700">No. de Cédula:</label>
+                    <input type="text" id="trabajador_cedula" name="cedula" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="trabajador_nacimiento" class="block text-sm font-medium text-gray-700">Fecha de Nacimiento:</label>
+                    <input type="text" id="trabajador_nacimiento" name="nacimiento" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+            </div>
+            <div>
+                <label for="trabajador_email" class="block text-sm font-medium text-gray-700">Correo Electrónico:</label>
+                <input type="email" id="trabajador_email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" autocomplete="email">
+            </div>
+            <div>
+                <label for="trabajador_celular" class="block text-sm font-medium text-gray-700">Número de Celular:</label>
+                <input type="text" id="trabajador_celular" name="celular" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="trabajador_usuario" class="block text-sm font-medium text-gray-700">Usuario:</label>
+                    <input type="text" id="trabajador_usuario" name="usuario" autocomplete="trabajador_usuario" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="trabajador_password" class="block text-sm font-medium text-gray-700">Contraseña:</label>
+                    <input type="password" id="trabajador_password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md" autocomplete="new-password">
+                </div>
+            </div>
+            <div>
+                <label for="trabajador_confirm_password" class="block text-sm font-medium text-gray-700">Confirmar Contraseña:</label>
+                <input type="password" id="trabajador_confirm_password" name="trabajador_confirm_password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required autocomplete="new-password">
+            </div>
+            <div class="text-center">
+                <input type="submit" value="Crear Usuario" class="bg-pink-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-pink-500">
+            </div>
+        </form>
+    </div>
+</section>
+<section id="cliente" class="py-10">
+    <div class="container mx-auto p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold text-center mb-4">Creación de Usuarios - Cliente</h2>
+        <form action="/submit_form" method="post" class="space-y-6">
+            <div>
+                <label for="cliente_nit" class="block text-sm font-medium text-gray-700">No. de NIT:</label>
+                <input type="text" id="cliente_nit" name="nit" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="cliente_empresa" class="block text-sm font-medium text-gray-700">Nombre de la Empresa:</label>
+                <input type="text" id="cliente_empresa" name="empresa" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="cliente_producto" class="block text-sm font-medium text-gray-700">Producto:</label>
+                <input type="text" id="cliente_producto" name="producto" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="cliente_celular" class="block text-sm font-medium text-gray-700">No. de Celular:</label>
+                <input type="text" id="cliente_celular" name="celular" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="cliente_email" class="block text-sm font-medium text-gray-700">Correo Electrónico:</label>
+                <input type="email" id="cliente_email" name="cliente_email" autocomplete="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div class="text-center">
+                <input type="submit" value="Crear Cliente" class="bg-pink-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-pink-500">
+            </div>
+        </form>
+    </div>
+</section>
+<section id="menu" class="py-10">
+    <div class="container mx-auto p-6 bg-white shadow-lg rounded-lg">
+        <p class="text-center text-xl mb-6">“A continuación encontrará el menú para cada necesidad”.</p>
+        <div class="flex flex-col md:flex-row justify-around">
+            <div class="mb-6 md:mb-0">
+                <p class="text-lg font-semibold text-gray-700">Si pertenece a la empresa</p>
+                <div class="space-y-2">
+                    <button class="empresa bg-vine text-white px-4 py-2 rounded-lg shadow-md hover:bg-violet-200 w-full">Inventario</button>
+                    <button id="Servis" class="empresa bg-vine text-white px-4 py-2 rounded-lg shadow-md hover:bg-violet-300 w-full">Depósito</button>
+                    <button class="empresa bg-vine text-white px-4 py-2 rounded-lg shadow-md hover:bg-violet-300 w-full">Existencias</button>
+                    <button id="Ventas" class="empresa bg-vine text-white px-4 py-2 rounded-lg shadow-md hover:bg-violet-300 w-full">Ventas</button>
+                    <button class="empresa bg-vine text-white px-4 py-2 rounded-lg shadow-md hover:bg-violet-300 w-full">Facturación</button>
+                </div>
+            </div>
+            <div>
+                <p class="text-lg font-semibold text-gray-700">Si es proveedor</p>
+                <div class="space-y-2">
+                    <button class="proveedor bg-yellow-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-yellow-400 w-full">Producto</button>
+                    <button id="Pedido" class="proveedor bg-yellow-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-yellow-400 w-full">Pedido</button>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 text-center">
+            <button class="final bg-orange-400 text-white px-4 py-2 rounded-lg shadow-md hover:bg-orange-300">Manual del Usuario</button>
+            <button id="Imprimir" class="final bg-orange-400 text-white px-4 py-2 rounded-lg shadow-md hover:bg-orange-300">Imprimir</button>
+        </div>
+    </div>
+</section>
+<section id="factura" class="py-10">
+    <div class="container mx-auto p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold text-center mb-4">Generar Factura</h2>
+        <form action="/generar_factura" method="post" class="space-y-6">
+            <div>
+                <label for="numeroFactura" class="block text-sm font-medium text-gray-700">Número de Factura:</label>
+                <input type="text" id="numeroFactura" name="numeroFactura" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="fecha" class="block text-sm font-medium text-gray-700">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="clienteId" class="block text-sm font-medium text-gray-700">ID del Cliente:</label>
+                <input type="number" id="clienteId" name="clienteId" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="total" class="block text-sm font-medium text-gray-700">Total:</label>
+                <input type="number" id="total" name="total" step="0.01" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="estado" class="block text-sm font-medium text-gray-700">Estado:</label>
+                <input type="text" id="estado" name="estado" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div class="text-center">
+                <input type="submit" value="Generar Factura" class="bg-pink-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-pink-500">
+            </div>
+        </form>
+    </div>
+</section>
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-16 bg-white text-center">
+        <div class="container mx-auto">
+            <h3 class="text-2xl font-bold text-purple-700">Contacto</h3>
+            <form action="/submit_form" method="post" class="mt-4">
+                <div class="grid grid-cols-1 gap-4">
+                    <div>
+                        <label for="fname" class="block text-left text-gray-700">Nombres:</label>
+                        <input type="text" id="fname" name="fname" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+                    </div>
+                    <div>
+                        <label for="contac_name" class="block text-left text-gray-700">Apellidos:</label>
+                        <input type="text" id="contac_name" name="contac_name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+                    </div>
+                    <div>
+                        <label for="contact_email" class="block text-left text-gray-700">Correo Electrónico:</label>
+                        <input type="email" id="contact_email" name="email" autocomplete="contact_email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-left text-gray-700">Mensaje:</label>
+                        <textarea id="message" name="message" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" value="Enviar" class="bg-pink-600 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-pink-500">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

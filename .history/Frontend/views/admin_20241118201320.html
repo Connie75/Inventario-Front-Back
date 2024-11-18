@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Fotocopiadoras del Huila</title>
+    <link rel="stylesheet" href="/Frontend/dist/output.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-pink-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-pink-200 p-4 flex justify-between items-center">
+        <div>
+            <img src="/Frontend/assets/Logo24.png" alt="Logo de mi empresa" class="h-12 w-auto">
+        </div>
+        <ul class="flex space-x-4">
+            <li><a href="#inventario" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Inventario</a></li>
+            <li><a href="#mision" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Misión</a></li>
+            <li><a href="#servicios" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Servicios</a></li>
+            <li><a href="#contacto" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Contacto</a></li>
+            <li><a href="#continuar" class="bg-vine text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Continuar</a></li>
+            <li><a href="#login" class="bg-vine text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">Login</a></li>
+        </ul>
+        <!-- Menú desplegable -->
+        <div class="relative group">
+            <a href="#" class="bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-lilac hover:text-purple transition">
+                Más Contenidos
+            </a>
+            <ul class="absolute hidden group-hover:block bg-white border border-purple-600 mt-2 w-48">
+                <li><a href="inventario.html" class="block px-4 py-2 hover:bg-pink-100">Inventario</a></li>
+                <li><a href="createUserEmployee.html" class="block px-4 py-2 hover:bg-pink-100">Crear Usuario (Empleado)</a></li>
+                <li><a href="createUserProvider.html" class="block px-4 py-2 hover:bg-pink-100">Crear Usuario (Proveedor)</a></li>
+                <li><a href="advertencia.html" class="block px-4 py-2 hover:bg-pink-100">Advertencia</a></li>
+                <li><a href="menu.html" class="block px-4 py-2 hover:bg-pink-100">Menú Principal</a></li>
+                <li><a href="presentacion.html" class="block px-4 py-2 hover:bg-pink-100">Presentación</a></li>
+                <li><a href="bienvenida.html" class="block px-4 py-2 hover:bg-pink-100">Bienvenida</a></li>
+                <li><a href="despedida.html" class="block px-4 py-2 hover:bg-pink-100">Despedida</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="p-8 bg-white">
+        <h1 class="text-3xl font-bold mb-6 text-purple-700">Panel de Administración</h1>
+        <nav>
+            <ul class="space-y-4">
+                <li><a href="/inventory" class="text-vine hover:underline">Gestionar Inventario</a></li>
+                <li><a href="/users/createEmployee" class="text-vine hover:underline">Crear Empleado</a></li>
+                <li><a href="/users/createProvider" class="text-vine hover:underline">Crear Proveedor</a></li>
+            </ul>
+        </nav>
+    </main>
+    </body>
+    </html>
+    

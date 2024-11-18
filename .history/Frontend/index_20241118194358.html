@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="style">
+</head>
+<body>
+    <h1>Inventario</h1>
+    <div id="auth">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input type="text" id="registerUsername" placeholder="Username" required>
+            <input type="password" id="registerPassword" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div id="inventory" style="display: none;">
+        <h2>Items</h2>
+        <ul id="itemsList"></ul>
+        <h2>Add Item</h2>
+        <form id="itemForm">
+            <input type="text" id="itemName" placeholder="Name" required>
+            <input type="number" id="itemQuantity" placeholder="Quantity" required>
+            <textarea id="itemDescription" placeholder="Description"></textarea>
+            <button type="submit">Add Item</button>
+        </form>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
